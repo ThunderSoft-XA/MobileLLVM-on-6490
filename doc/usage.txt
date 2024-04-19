@@ -1,0 +1,7 @@
+1. How to determine the hardware platform:
+View through shell command, uname -a
+or, cat /sys/devices/soc0/chip_name 
+2. How to determine operating system information:
+cat /etc/os-release
+3. Execute the command:
+./llava-cli -m ../model/ggml-model-q4_k.gguf --mmproj ../model/mmproj-model-f16.gguf --image ../input/input.jpg -p 'what is it in the picture'
